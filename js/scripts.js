@@ -1,11 +1,16 @@
 $(document).ready(function(){
-  $("form#rideSurvey").submit(function(event){
+  $("form#transportation_survey").submit(function(event){
     event.preventDefault();
-    $("#workResponses").show();
-    $("input:checkbox[name=work-ride]:checked").each(function(){
-      var workRideMode = $(this).val();
-      $('#workResponses').append(workRideMode + "<br>");
+    $("#work-responses").show();
+    $("input:checkbox[name=work-transportation]:checked").each(function(){
+      var workTransportationMode = $(this).val();
+      $('#work-responses').append(workTransportationMode + "<br>");
     });
-    $('#rideSurvey').hide();
+    $("#fun-responses").show();
+    $("input:checkbox[name=fun-transportation]:checked").each(function(){
+      var funTransportationMode = $(this).val();
+      $('#fun-responses').append(funTransportationMode + "<br>");
+    });
+    $('#transportation_survey').hide();
   });
 });

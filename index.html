@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ride Survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Ride Survey</h2>
+      </div>
+      <form id="rideSurvey">
+        <div class="form-group">
+          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
+          <input type="checkbox" name="work-ride" value="bike"> Riding a bike.<br>
+          <input type="checkbox" name="work-ride" value="car">Driving a car.<br>
+          <input type="checkbox" name="work-ride" value="carpool">Carpooling with others.<br>
+          <input type="checkbox" name="work-ride" value="walk">Walking.<br>
+          <input type="checkbox" name="work-ride" value="bus">Riding the bus.<br>
+          <input type="checkbox" name="work-ride" value="train">Riding the train.<br>
+          <input type="checkbox" name="work-ride" value="streetcar">Riding the streetcar.<br>
+          <input type="checkbox" name="work-ride" value="taxi">Taking a taxi.<br>
+          <input type="checkbox" name="work-ride" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
+          <input type="checkbox" name="work-ride" value="skateboard">Skateboarding.<br>
+          <input type="checkbox" name="work-ride" value="rollerblade">Rollerblading.<br>
+          <input type="checkbox" name="work-ride" value="scooter">Riding a scooter.<br>
+          <input type="checkbox" name="work-ride" value="other">Another mode of transportation not listed here.<br>
+        </div>
+       <button type="submit">Submit Survey</button>
+      </form>
+      <span id="workResponses">
+        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+      </span>
+    </div>
+  </body>
+</html>
